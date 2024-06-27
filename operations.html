@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations Division - Police Department Management Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadContent()">
+    <header>
+        <h1>Operations Division</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="administration.html">Administration</a></li>
+                <li><a href="investigations.html">Investigations</a></li>
+                <li><a href="operations.html">Operations</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="division-content">
+            <div class="responsibilities">
+                <h2>Responsibilities</h2>
+                <div id="operationsResponsibilities" class="editable-content">
+                    <h3>Patrol Operations</h3>
+                    <ul>
+                        <li>Manage day, evening, and midnight shifts</li>
+                        <li>Oversee staffing levels for each shift</li>
+                        <li>Review and approve incident reports</li>
+                    </ul>
+                    <h3>Special Operations</h3>
+                    <ul>
+                        <li>Supervise K-9 Unit</li>
+                        <li>Manage Traffic Operations Unit</li>
+                        <li>Coordinate special event traffic management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tasks">
+                <h2>Weekly Checklist</h2>
+                <div id="operationsTasks" class="division-tasks">
+                    <label><input type="checkbox" onchange="updateTaskStatus(this)"> Review staffing levels for all shifts</label><br>
+                    <label><input type="checkbox" onchange="updateTaskStatus(this)"> Analyze crime trends from daily reports</label><br>
+                    <label><input type="checkbox" onchange="updateTaskStatus(this)"> Check community engagement activity logs</label><br>
+                    <label><input type="checkbox" onchange="updateTaskStatus(this)"> Approve overtime requests</label><br>
+                    <label><input type="checkbox" onchange="updateTaskStatus(this)"> Review use of force incidents</label><br>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
